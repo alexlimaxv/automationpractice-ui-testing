@@ -44,9 +44,9 @@ public class SetupTest extends BaseTests{
         login.clickBtnSubmitLogin();
         System.out.println("Clicou em signin");
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl().concat("index.php?controller=my-account")));
-        System.out.println("Validou a URL da minha conta");
+        System.out.println("Validou a URL da pagina minha conta");
         assertTrue(Browser.getCurrentDriver().findElement(By.className("page-heading")).getText().contains("MY ACCOUNT"));
-        System.out.println("Validou minha conta site");
+        System.out.println("Validou pagina minha conta no site");
 
     }
 

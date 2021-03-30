@@ -14,16 +14,19 @@ public class CreateAccountPage extends CreateAccountElementMapper {
 
     @Step("Preenche o email para registro")
     public void fillEmailToCreateAccount(){
-        email_create.sendKeys("testecttr@gmail.com");
+        email_create.sendKeys("alextestecwi@gmail.com");
     }
+
     @Step("Clica no botão create account")
     public void clickSubmitCreateBtn(){
         SubmitCreate.click();
     }
 
+    @Step("Seleciona o genero Mr ou Mrs")
     public void clickIdGender(){
         id_gender1.click();
     }
+
     @Step("Preenche o campo primeiro nome")
     public void fillCustomerFirstname(){
         customer_firstname.sendKeys("Alexandro");
@@ -65,23 +68,28 @@ public class CreateAccountPage extends CreateAccountElementMapper {
     public void fillZipCode(){
         postcode.sendKeys("90224");
     }
+
     @Step("Preenche o numero de celular")
     public void fillMobilePhoneField(){
         phone_mobile.sendKeys("992345678");
     }
+
     @Step("Clica para enviar os dados e criar a conta")
     public void clickSubmitAccountBtn(){
         submitAccount.click();
     }
 
+    // Retorna o texto do Heading da pagina de criação de conta
     public String getTextPageHeading(){
         return pageHeading.getText();
     }
 
+    //Retorna o texto do Subheading da pagina
     public String getTextPageSubHeading(){
         return pageSubHeading.getText();
     }
 
+    //Função que valida se estamos na pagina de ciração de conta
     public boolean isCreateAccountPage(){
         return getTextPageHeading().contains("CREATE AN ACCOUNT");
     }
@@ -89,7 +97,6 @@ public class CreateAccountPage extends CreateAccountElementMapper {
     public String getCreateAccountPageHeadingName(){
         return accountPageHeadingName.getText();
     }
-
 
     public String getCreateAccountInfoAccount(){
         return accountInfoAccount.getText();
