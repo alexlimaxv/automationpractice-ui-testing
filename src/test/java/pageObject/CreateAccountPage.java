@@ -94,22 +94,30 @@ public class CreateAccountPage extends CreateAccountElementMapper {
         return getTextPageHeading().contains("CREATE AN ACCOUNT");
     }
 
+    // Retorna o texto do Heading da pagina da conta MY ACCOUNT
     public String getCreateAccountPageHeadingName(){
         return accountPageHeadingName.getText();
     }
 
+    // Retorna o texto do info da pagina da conta Welcome to your account
     public String getCreateAccountInfoAccount(){
         return accountInfoAccount.getText();
     }
 
+    //Função que valida se estamos na pagina da conta MY ACCOUNT
     public boolean isAccountPage(){
         return getCreateAccountPageHeadingName().contains("MY ACCOUNT");
     }
 
+    //Função que valida se estamos na pagina da conta verificando se no campo de info contém Welcome to your account
     public boolean isMyAccountInfo(){
         return getCreateAccountInfoAccount().contains("Welcome to your account");
     }
 
+    //Método de criação de conta
+    //Aqui reune todas as funcões que a criação de conta necessita
+    //Nos garante um codigo mais limpo sem a necessidade de chamar as funções individualmente
+    //no teste principal
     public void createAccount(){
 
         clickIdGender();

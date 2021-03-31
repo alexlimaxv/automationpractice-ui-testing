@@ -14,20 +14,11 @@ public class SearchElementMapper {
     @FindBy(className = "heading-counter")
     public WebElement heading_counter;
 
-    @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/h5/a")
+    @FindBy(css = "li:nth-child(1) div.right-block a")
     public WebElement searchListElementOne;
 
-    //Buscando o elemento pelo css selector
-//    @FindBy(css = "#center_column  ul  li:nth-child(1)  div  div.right-block  h5  a")
-//    public WebElement searchListElementOne;
-
-    @FindBy(xpath = "//*[@id=\"center_column\"]/div/div/div[3]/h1")
+    @FindBy(css= ".pb-center-column h1[itemprop=name]")
     public WebElement dressPageElement;
-
-    //This selector get the text from <a> tag at the top left of the page
-    //This gets the text Summer Dresses
-//    @FindBy(xpath = "//*[@id=\"columns\"]/div[1]/a[4]")
-//    public WebElement navigationDressPage;
 
     //This selector get the text from <a> tag at the top left of the page
     //This gets the text Printed Summer Dress

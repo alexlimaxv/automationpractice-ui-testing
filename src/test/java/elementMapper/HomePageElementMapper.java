@@ -9,16 +9,9 @@ public class HomePageElementMapper {
 
     public WebElement search_query_top;
 
-    //Busca elemento pelo nome
-    //public WebElement submit_search;
-
-   //Busca Elemento pelo xpath
-    @FindBy(xpath = "//*[@id=\"searchbox\"]/button")
+    //Busca Elemento pelo css selector
+    @FindBy(css = "button.btn.btn-default.button-search")
     public WebElement submit_search;
-
-//    //Busca Elemento pelo css selector
-//    @FindBy(css = "button.btn.btn-default.button-search")
-//    public WebElement submit_search;
 
     //Clica no produto na pagina home
     @FindBy(css = "#homefeatured li:nth-child(1) div div.right-block h5 a")
