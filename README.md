@@ -1,6 +1,6 @@
-# Repositório treinamento CWI
+# RestAssured Java Automated Test Repository
 
-Esse repositório faz parte do treinamento de Automação de Testes da CWI. A criação foi proposta para treinamento do uso da ferramenta do GItHub. 
+This repository is part of CWI's Test Automation training. The creation was proposed for training in the use of the GItHub tool.
 
-Nesse treinamento estamos usando o site http://automationpractice.com/ para praticar automação de testes. Neste repositório tem a aplicação de alguns testes realizados nesse treinamento​.  :wink:
+In this training we are using the website http://automationpractice.com/ to practice test automation. This repository contains the application of some tests carried out in this training.  :wink:
 
